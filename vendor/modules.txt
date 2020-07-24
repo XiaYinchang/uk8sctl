@@ -1,0 +1,39 @@
+# github.com/inconshreveable/mousetrap v1.0.0
+github.com/inconshreveable/mousetrap
+# github.com/konsorten/go-windows-terminal-sequences v1.0.1
+github.com/konsorten/go-windows-terminal-sequences
+# github.com/pkg/errors v0.9.1
+## explicit
+github.com/pkg/errors
+# github.com/sirupsen/logrus v1.4.2
+## explicit
+github.com/sirupsen/logrus
+# github.com/spf13/cobra v1.0.0
+## explicit
+github.com/spf13/cobra
+# github.com/spf13/pflag v1.0.5
+## explicit
+github.com/spf13/pflag
+# github.com/stretchr/testify v1.4.0
+## explicit
+# github.com/ucloud/ucloud-sdk-go v0.16.4
+## explicit
+github.com/ucloud/ucloud-sdk-go/private/protocol/http
+github.com/ucloud/ucloud-sdk-go/private/utils
+github.com/ucloud/ucloud-sdk-go/services/uhost
+github.com/ucloud/ucloud-sdk-go/services/unet
+github.com/ucloud/ucloud-sdk-go/services/vpc
+github.com/ucloud/ucloud-sdk-go/ucloud
+github.com/ucloud/ucloud-sdk-go/ucloud/auth
+github.com/ucloud/ucloud-sdk-go/ucloud/error
+github.com/ucloud/ucloud-sdk-go/ucloud/log
+github.com/ucloud/ucloud-sdk-go/ucloud/request
+github.com/ucloud/ucloud-sdk-go/ucloud/response
+github.com/ucloud/ucloud-sdk-go/ucloud/version
+# golang.org/x/sys v0.0.0-20200122134326-e047566fdf82
+## explicit
+golang.org/x/sys/unix
+# gopkg.in/check.v1 v1.0.0-20190902080502-41f04d3bba15
+## explicit
+# gopkg.in/yaml.v2 v2.2.8
+## explicit
