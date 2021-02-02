@@ -12,6 +12,8 @@ type GlobalConfig struct {
 	Region    string
 	ProjectId string
 	LogLevel  string
+	ImageID   string
+	ImageType string
 }
 
 var RegionZoneMap = map[string][]string{

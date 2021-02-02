@@ -95,7 +95,11 @@ func setDefaultConfig() {
 	if *uhostConfig.SubnetId == "" {
 		uhostConfig.SubnetId = ucloud.String(randomGetSubnetId())
 	}
-	uhostConfig.ImageId = ucloud.String(getUK8SImageId())
+	if globalConfig.ImageID != "" {
+		uhostConfig.ImageId = ucloud.String(globalConfig.ImageID)
+	} else {
+		uhostConfig.ImageId = ucloud.String(getUK8SImageId())
+	}
 }
 
 func randomGetZone() string {
@@ -155,7 +159,7 @@ func getUK8SImageId() string {
 		log.Fatalf("no image found")
 	}
 	for _, imageInfo := range res.ImageSet {
-		if strings.Contains(strings.ToLower(imageInfo.ImageName), defaultImage) {
+		if strings.Contains(strings.ToLower(imageInfo.ImageName), globalConfig.ImageType) {
 			return imageInfo.ImageId
 		}
 	}

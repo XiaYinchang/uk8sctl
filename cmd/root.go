@@ -22,6 +22,8 @@ func NewRootCmd() *cobra.Command {
 	cmd.PersistentFlags().StringVar(&globalConfig.PrivateKey, "privatekey", "", "Required. ucloud privatekey")
 	cmd.PersistentFlags().StringVar(&globalConfig.Region, "region", "", "Required. The region choosed for creating resources")
 	cmd.PersistentFlags().StringVar(&globalConfig.ProjectId, "project-id", "", "Required. Which project to use")
+	cmd.PersistentFlags().StringVar(&globalConfig.ImageID, "image-id", "", "Which image to use，has higher priority than image-type")
+	cmd.PersistentFlags().StringVar(&globalConfig.ImageType, "image-type", defaultImage, "Which image type to use, centos or ubuntu")
 	cmd.MarkPersistentFlagRequired("publickey")
 	cmd.MarkPersistentFlagRequired("privatekey")
 	cmd.MarkPersistentFlagRequired("region")
