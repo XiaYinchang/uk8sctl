@@ -4,13 +4,15 @@ UCloud UK8S helper tool.
 
 ### 全局参数
 
-全局参数均为必填参数
+全局参数
 | 参数 | 解释 |
 | ------------ | ----------------- |
 | publickey | 用户在 UCloud 云平台生成的 PublicKey |
 | privatekey | 用户在 UCloud 云平台生成的 PrivateKey |
 | region | 指定资源所在地域，[点击查看地域列表](https://docs.ucloud.cn/api/summary/regionlist) |
 | project-id | 指定资源所在项目，项目 Id 可在控制台首页查看到 |
+| image-id | 指定镜像 ID 用于创建虚拟机，选填 |
+| image-type | 指定镜像类型，可以是 centos 或者 ubuntu，默认为 centos， 可选填 |
 
 ### 支持的命令
 
@@ -43,7 +45,7 @@ UCloud UK8S helper tool.
 执行命令：
 
 ```bash
-./uk8sctl create-base-uhost --publickey your-public-key --privatekey you-private-key --region cn-bj2 --project-id org-test --password just-for-test
+./uk8sctl create-base-uhost --publickey your-public-key --privatekey you-private-key --region cn-bj2 --project-id org-test --image-type centos --password just-for-test
 ```
 
 输出如下：
